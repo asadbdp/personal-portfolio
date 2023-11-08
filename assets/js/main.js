@@ -6,7 +6,7 @@ Author:		Asaduzzaman
 Portfolio:  bdprogrammer.com/portfolio
 
 ------------------------------------------- */
-$(function() {
+jQuery(document).ready(function($) {
 
   "use strict";
 
@@ -32,7 +32,7 @@ $(function() {
   });
 
   // page loading
-  $(document).ready(function() {
+  jQuery(document).ready(function($) {
     anime({
       targets: '.art-preloader .art-preloader-content',
       opacity: [0, 1],

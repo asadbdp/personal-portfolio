@@ -35,7 +35,7 @@
                             <!-- testimonial body -->
                             <div class="testimonial-body">
                               <!-- photo -->
-                              <img class="art-testimonial-face" src="assets/img/testimonials/face-2.png" alt="face">
+                              <img class="art-testimonial-face" src="<?php echo get_template_directory_uri(  )?>/assets/img/testimonials/face-2.png" alt="face">
                               <!-- name -->
                               <h5>Feet Up Bob</h5>
                               <div class="art-el-suptitle mb-15">USA</div>
@@ -75,7 +75,7 @@
                             <!-- testimonial body -->
                             <div class="testimonial-body">
                               <!-- photo -->
-                              <img class="art-testimonial-face" src="assets/img/testimonials/face-2.png" alt="face">
+                              <img class="art-testimonial-face" src="<?php echo get_template_directory_uri(  )?>/assets/img/testimonials/face-2.png" alt="face">
                               <!-- name -->
                               <h5>Micah White</h5>
                               <div class="art-el-suptitle mb-15">USA</div>
@@ -115,7 +115,7 @@
                             <!-- testimonial body -->
                             <div class="testimonial-body">
                               <!-- photo -->
-                              <img class="art-testimonial-face" src="assets/img/testimonials/face-2.png" alt="face">
+                              <img class="art-testimonial-face" src="<?php echo get_template_directory_uri(  )?>/assets/img/testimonials/face-2.png" alt="face">
                               <!-- name -->
                               <h5>Stephen Watson</h5>
                               <div class="art-el-suptitle mb-15">Canadian</div>
@@ -155,7 +155,7 @@
                             <!-- testimonial body -->
                             <div class="testimonial-body">
                               <!-- photo -->
-                              <img class="art-testimonial-face" src="assets/img/testimonials/face-2.png" alt="face">
+                              <img class="art-testimonial-face" src="<?php echo get_template_directory_uri()?>/assets/img/testimonials/face-2.png" alt="face">
                               <!-- name -->
                               <h5>Jadav Ghosh</h5>
                               <div class="art-el-suptitle mb-15">Indian</div>

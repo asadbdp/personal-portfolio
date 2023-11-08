@@ -31,7 +31,7 @@
           </div>
           <!-- main title end -->
           <!-- photo -->
-          <img src="assets/img/asaduzzaman_bg.png" class="art-banner-photo" alt="Your Name">
+          <img src="<?php echo get_template_directory_uri(  )?>/assets/img/asaduzzaman_bg.png" class="art-banner-photo" alt="Your Name">
         </div>
         <!-- banner overlay end -->
       </div>

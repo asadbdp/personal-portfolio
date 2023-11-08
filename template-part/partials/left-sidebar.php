@@ -33,8 +33,8 @@
             <div class="art-header">
               <!-- avatar -->
               <div class="art-avatar">
-                <a data-fancybox="avatar" href="assets/img/asaduzzaman_bdprogrammer.jpg" class="art-avatar-curtain">
-                  <img src="assets/img/asaduzzaman_bdprogrammer.jpg" alt="avatar">
+                <a data-fancybox="avatar" href="<?php echo get_template_directory_uri(  )?>/assets/img/asaduzzaman_bdprogrammer.jpg" class="art-avatar-curtain">
+                  <img src="<?php echo get_template_directory_uri(  )?>/assets/img/asaduzzaman_bdprogrammer.jpg" alt="avatar">
                   <i class="fas fa-expand"></i>
                 </a>
                 <!-- available -->

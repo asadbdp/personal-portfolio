@@ -3,7 +3,7 @@
                 <!-- footer -->
                 <footer>
                   <!-- copyright -->
-                  <div>© 2022 bdprogrammer</div>
+                  <div>©2023 bdprogrammer</div>
                   <!-- author ( Please! Do not delete it. You are awesome! :) -->
                   <div><a href="http://bdprogrammer.com/" target="_blank">Asaduzzaman</a></div>
                 </footer>
