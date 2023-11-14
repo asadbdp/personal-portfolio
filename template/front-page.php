@@ -58,45 +58,7 @@
       <?php get_template_part('template-part/partials/contact'); ?>
       <!-- container end -->
 
-      <!-- container -->
-      <div class="container-fluid">
 
-        <!-- row -->
-        <div class="row">
-
-          <!-- col -->
-          <div class="col-6 col-lg-3">
-            <!-- brand -->
-            <img class="art-brand" src="<?php get_template_directory_uri(  )?>/assets/img/brands/1.png" alt="brand">
-          </div>
-          <!-- col end -->
-
-          <!-- col -->
-          <div class="col-6 col-lg-3">
-            <!-- brand -->
-            <img class="art-brand" src="<?php get_template_directory_uri(  )?>/assets/img/brands/2.png" alt="brand">
-          </div>
-          <!-- col end -->
-
-          <!-- col -->
-          <div class="col-6 col-lg-3">
-            <!-- brand -->
-            <img class="art-brand" src="<?php get_template_directory_uri(  )?>/assets/img/brands/3.png" alt="brand">
-          </div>
-          <!-- col end -->
-
-          <!-- col -->
-          <div class="col-6 col-lg-3">
-            <!-- brand -->
-            <img class="art-brand" src="<?php get_template_directory_uri(  )?>/assets/img/brands/1.png" alt="brand">
-          </div>
-          <!-- col end -->
-
-        </div>
-        <!-- row end -->
-
-      </div>
-      <!-- container end -->
 
       <!-- container -->
       <?php get_footer(); ?>
