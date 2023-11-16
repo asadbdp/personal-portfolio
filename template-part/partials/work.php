@@ -64,13 +64,23 @@
                     'order' => 'DES',
                   ));
 
-                  while($query->have_posts()) : $query->the_post()?>
+                 
 
+                  while($query->have_posts()) : $query->the_post();
 
+                  $categories = get_the_category();
+                  $category_names = '';
 
-                    
+                  if ($categories) {
+                      foreach ($categories as $category) {
+                          $category_names .= $category->name . ' '; // Concatenate category names
+                      }
+                  }                                   
+                                    
+                  ?> 
+                   
                     <!-- grid item -->
-                    <div class="art-grid-item <?php echo $term->name;?>">
+                    <div class="art-grid-item <?php echo esc_attr($category_names); ?>">
                       <!-- grid item frame -->
                       <a data="gallery"  class="art-a art-portfolio-item-frame art-vertical">
                         <!-- img -->

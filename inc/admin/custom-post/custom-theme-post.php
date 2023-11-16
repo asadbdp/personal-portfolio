@@ -27,10 +27,38 @@
     $arg = array(
         'labels' => $label,
         'public' => true,
-        'supports' => array('title', 'thumbnail'),
+        'supports' => array('title'),
         'menu_icon' => 'dashicons-format-gallery',
         'taxonomies' => array( 'category'),
         'menu_position' => 2,
+
+
+    );
+
+
+
+	$ExpLabel = array(
+        'name' => 'Exprience',
+        'menu_name' => 'Exprience',
+        'singular_name' => 'Exprience',
+        'add_new' => 'Add Exprience',
+        'new_item' => 'New Exprience',
+        'add_new_item' => 'Add New Exprience',
+        'all_items' => 'All Exprience',        
+        'edit_item' => 'Edit Exprience',
+        'update_item' => 'Update Exprience',
+        'view_item' => 'View Exprience',
+        'view_items' => 'View Exprience',
+        'search_items' => 'Search Exprience',       
+
+    );
+
+    $Exarg = array(
+        'labels' => $ExpLabel,
+        'public' => true,
+        'supports' => array('title'),
+        'menu_icon' => 'dashicons-list-view',        
+        'menu_position' => 3,
 
 
     );
@@ -85,6 +113,7 @@
 	);*/
 
     register_post_type('sample', $arg);
+	register_post_type('exprience', $Exarg);
 	
  }
  add_action('init', 'register_custom_post');

@@ -97,6 +97,22 @@
       <!-- timeline -->
       <div class="art-timeline">
 
+      <?php 
+      
+      $query = new WP_Query(array(
+        'post_type' => 'exprience',
+        'posts_per_page' => -1,
+        'orderby' => 'id',
+        'order' => 'des'
+
+      ));
+
+      while($query->have_posts()) : $query->the_post();
+      
+      ?>
+
+      
+
         <div class="art-timeline-item">
           <div class="art-timeline-mark-light"></div>
           <div class="art-timeline-mark"></div>
@@ -105,34 +121,29 @@
           <div class="art-a art-timeline-content">
             <div class="art-card-header">
               <div class="art-left-side">
-                <h5>Frontend Web Developer</h5>
-                <div class="art-el-suptitle mb-15">UY Systems Ltd</div>
+                <h5><?php echo esc_html(get_field('designation'));?></h5>
+                <div class="art-el-suptitle mb-15"><?php echo get_field('company_name');?></div>
               </div>
               <div class="art-right-side">
-                <span class="art-date">Oct 2015 - Jul 2017</span>
+                <?php 
+                  $joining_date = get_field('joining_date'); 
+                  $date_formating = date('M y', strtotime($joining_date));
+
+                  $resign_date = get_field('resign_date');
+                  $re_date_form = date('M y', strtotime($resign_date));
+                
+                
+                ?>
+                <span class="art-date"><?php echo $date_formating; ?> - <?php echo $re_date_form;?></span>
               </div>
             </div>
-            <p>I was appointed as a front-end web developer at UY Systems Limited. I’m here to create a variety of responsive web templates and PSD to HTML bootstrap website.</p>
+            <p></p>
           </div>
         </div>
 
-        <div class="art-timeline-item">
-          <div class="art-timeline-mark-light"></div>
-          <div class="art-timeline-mark"></div>
+        <?php endwhile; ?> 
 
-          <div class="art-a art-timeline-content">
-            <div class="art-card-header">
-              <div class="art-left-side">
-                <h5>Web Developer</h5>
-                <div class="art-el-suptitle mb-15">Freelancer</div>
-              </div>
-              <div class="art-right-side">
-                <span class="art-date">Dec 2017 - Continuing</span>
-              </div>
-            </div>
-            <p>I'm working with various clients on website design, PHP, Laravel, MySQL, WordPress theme customization, Custom website design and development, Speed Optimization, and Bug Fixing.</p>
-          </div>
-        </div>      
+              
 
       </div>
       <!-- timeline end -->
